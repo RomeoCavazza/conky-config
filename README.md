@@ -4,6 +4,30 @@ Transparent Conky side rails for the Hyprland desktop. The layout keeps live
 system telemetry on the edges of the workspace while leaving the center free
 for windows.
 
+The launcher starts both rails and prefers the repository copy when available:
+
+```sh
+/etc/nixos/config/conky/start_edex_conky_compact.sh
+```
+
+From Hyprland, the configured toggle is:
+
+```sh
+/etc/nixos/config/bin/edex-conky-toggle
+```
+
+The toggle makes Conky, Rofi, and the Hyprspace overview mutually exclusive. It
+also adjusts workspace gaps while the rails are visible, then restores the
+previous gap state when Conky exits.
+
+| Path | Role |
+| --- | --- |
+| [`conky-left.txt`](conky-left.txt) | Desktop information and resource rail |
+| [`conky-right.txt`](conky-right.txt) | GPU, thermals, network health, and NixOS rail |
+| [`start_edex_conky_compact.sh`](start_edex_conky_compact.sh) | Starts both rails and warms script caches |
+| [`scripts/`](scripts/) | Metric helpers for GPU, CPU temp, network, disk, ping, and Nix store |
+| [`assets/`](assets/) | README screenshots |
+
 ## Previews
 
 ### Empty Workspace
@@ -39,31 +63,3 @@ The right rail keeps operational signals visible:
 - ping, established connections, and TIME-WAIT sockets
 - system load, failed units, user count, and running processes
 - Nix store size, current system generation, and retained generations
-
-## Usage
-
-The launcher starts both rails and prefers the repository copy when available:
-
-```sh
-/etc/nixos/config/conky/start_edex_conky_compact.sh
-```
-
-From Hyprland, the configured toggle is:
-
-```sh
-/etc/nixos/config/bin/edex-conky-toggle
-```
-
-The toggle makes Conky, Rofi, and the Hyprspace overview mutually exclusive. It
-also adjusts workspace gaps while the rails are visible, then restores the
-previous gap state when Conky exits.
-
-## Files
-
-| Path | Role |
-| --- | --- |
-| [`conky-left.txt`](conky-left.txt) | Desktop information and resource rail |
-| [`conky-right.txt`](conky-right.txt) | GPU, thermals, network health, and NixOS rail |
-| [`start_edex_conky_compact.sh`](start_edex_conky_compact.sh) | Starts both rails and warms script caches |
-| [`scripts/`](scripts/) | Metric helpers for GPU, CPU temp, network, disk, ping, and Nix store |
-| [`assets/`](assets/) | README screenshots |
