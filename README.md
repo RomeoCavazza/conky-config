@@ -48,18 +48,34 @@ The same rails with an editor window open in the center.
 
 The left rail focuses on local desktop state and host resources:
 
-- time, timezone, battery, host, user, kernel, uptime, and external IP
-- network interface, packet counters, upload and download graphs
-- CPU load, per-core bars, top CPU processes
-- RAM, swap, cache, top memory processes
-- root, home, and disk I/O usage
+- **Session**: time, timezone, battery, host, user, kernel, uptime, and external
+  IP.
+- **Network**: interface detection via [`net_iface.sh`](scripts/net_iface.sh),
+  packet counters via [`net_packets.sh`](scripts/net_packets.sh), throughput via
+  [`net_rx_kib.sh`](scripts/net_rx_kib.sh) and
+  [`net_tx_kib.sh`](scripts/net_tx_kib.sh), plus graph helpers
+  [`net_rx_graph.sh`](scripts/net_rx_graph.sh) and
+  [`net_tx_graph.sh`](scripts/net_tx_graph.sh).
+- **CPU**: total load, per-core bars, process count, and top CPU processes.
+- **Memory**: RAM, swap, cache, and top memory processes.
+- **Storage**: root and home usage plus disk I/O via
+  [`disk_io_kib.sh`](scripts/disk_io_kib.sh) and
+  [`disk_io_graph.sh`](scripts/disk_io_graph.sh).
 
 ### Ops Panel
 
 The right rail keeps operational signals visible:
 
-- NVIDIA GPU name, utilization, VRAM, temperature, power, and clocks
-- CPU and GPU thermals
-- ping, established connections, and TIME-WAIT sockets
-- system load, failed units, user count, and running processes
-- Nix store size, current system generation, and retained generations
+- **GPU**: NVIDIA device name via [`gpu_name.sh`](scripts/gpu_name.sh), live
+  metrics via [`gpu_info.sh`](scripts/gpu_info.sh), and graph helpers
+  [`gpu_util_graph.sh`](scripts/gpu_util_graph.sh),
+  [`gpu_mem_graph.sh`](scripts/gpu_mem_graph.sh), and
+  [`gpu_power_graph.sh`](scripts/gpu_power_graph.sh).
+- **Thermals**: CPU temperature via [`cpu_temp_c.sh`](scripts/cpu_temp_c.sh)
+  and GPU temperature via [`gpu_info.sh`](scripts/gpu_info.sh).
+- **Network Health**: ping latency via [`ping_ms.sh`](scripts/ping_ms.sh),
+  established connections, and TIME-WAIT sockets.
+- **System Health**: load average, failed units, user count, and running
+  process count.
+- **NixOS**: store size via [`nix_store_size.sh`](scripts/nix_store_size.sh),
+  current system generation, and retained generations.
