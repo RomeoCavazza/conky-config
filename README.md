@@ -1,5 +1,12 @@
 # Conky Rails
 
+<p align="left">
+  <img src="assets/conky.png" alt="Conky" width="26" />
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/hyprland.svg" alt="Hyprland" width="26" />
+  <img src="https://raw.githubusercontent.com/RomeoCavazza/setup-os/refs/heads/main/docs/assets/logo/nvidia.svg" alt="NVIDIA" width="26" />
+  <img src="https://raw.githubusercontent.com/RomeoCavazza/setup-os/refs/heads/main/docs/assets/logo/nixos.png" alt="NixOS" width="26" />
+</p>
+
 Transparent Conky side rails for the Hyprland desktop. The layout keeps live
 system telemetry on the edges of the workspace while leaving the center free
 for windows.
