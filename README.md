@@ -3,7 +3,7 @@
 <p align="left">
   <img src="assets/conky.png" alt="Conky" width="26" />
   <img src="assets/hyprland.png" alt="Hyprland" height="22" />
-  <img src="https://raw.githubusercontent.com/RomeoCavazza/setup-os/refs/heads/main/docs/assets/logo/nvidia.svg" alt="NVIDIA" width="26" />
+  <img src="https://raw.githubusercontent.com/RomeoCavazza/nixos-config/refs/heads/main/docs/assets/logo/nvidia.svg" alt="NVIDIA" width="26" />
 </p>
 
 Transparent Conky side rails for the Hyprland desktop. The layout keeps live
