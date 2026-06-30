@@ -10,16 +10,18 @@ Transparent Conky side rails for the Hyprland desktop. The layout keeps live
 system telemetry on the edges of the workspace while leaving the center free
 for windows.
 
-The launcher starts both rails and prefers the repository copy when available:
+The launcher starts both rails. When launched from Home Manager, it can resolve
+the repository checkout through `NIXOS_CONFIG_REPO`; otherwise it falls back to
+its own directory:
 
 ```sh
-/etc/nixos/config/conky/start_edex_conky_compact.sh
+start_edex_conky_compact.sh
 ```
 
 From Hyprland, the configured toggle is:
 
 ```sh
-/etc/nixos/config/bin/edex-conky-toggle
+edex-conky-toggle
 ```
 
 The toggle makes Conky, Rofi, and the Hyprspace overview mutually exclusive. It

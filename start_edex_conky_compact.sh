@@ -2,7 +2,9 @@
 set -euo pipefail
 
 CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/conky"
-REPO_DIR="/etc/nixos/config/conky"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="${NIXOS_CONFIG_REPO:+${NIXOS_CONFIG_REPO}/config/conky}"
+REPO_DIR="${REPO_DIR:-$SCRIPT_DIR}"
 CONKY_CFG="$CONFIG_DIR/conky-left.txt"
 CONKY_RIGHT_CFG="$CONFIG_DIR/conky-right.txt"
 CONKY_RE='conky .*(conky-left\.txt|conky-right\.txt|conky\.txt)'
