@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v26
+
+      - name: ShellCheck scripts
+        run: nix shell nixpkgs#shellcheck -c shellcheck start_edex_conky_compact.sh scripts/*.sh
+
+      - name: Validate required layouts
+        run: |
+          test -s conky-left.txt
+          test -s conky-right.txt

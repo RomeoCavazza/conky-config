@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-raw="$(${SCRIPT_DIR}/net_tx_kib.sh)"
+raw="$("${SCRIPT_DIR}/net_tx_kib.sh")"
 [[ "${raw}" =~ ^[0-9]+$ ]] || raw=0
 
 state_file="${XDG_RUNTIME_DIR:-/tmp}/conky-net-tx-graph.state"

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-raw="$(${SCRIPT_DIR}/gpu_info.sh power)"
+raw="$("${SCRIPT_DIR}/gpu_info.sh" power)"
 [[ "${raw}" =~ ^[0-9]+$ ]] || raw=0
 
 state_file="${XDG_RUNTIME_DIR:-/tmp}/conky-gpu-power-graph.state"

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-iface="$(${SCRIPT_DIR}/net_iface.sh)"
+iface="$("${SCRIPT_DIR}/net_iface.sh")"
 
 if [[ "${iface}" == "n/a" ]]; then
   echo "n/a"

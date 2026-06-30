@@ -1,5 +1,7 @@
 # Conky
 
+[![CI](https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml/badge.svg)](https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml)
+
 <p align="left">
   <img src="assets/conky.png" alt="Conky" width="26" />
   <img src="assets/hyprland.png" alt="Hyprland" height="22" />
