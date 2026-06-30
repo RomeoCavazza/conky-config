@@ -1,11 +1,10 @@
 # Conky
 
-[![CI](https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml/badge.svg)](https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml)
-
 <p align="left">
   <img src="assets/conky.png" alt="Conky" width="26" />
   <img src="assets/hyprland.png" alt="Hyprland" height="22" />
   <img src="https://raw.githubusercontent.com/RomeoCavazza/nixos-config/refs/heads/main/docs/assets/logo/nvidia.svg" alt="NVIDIA" width="26" />
+  <a href="https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml"><img src="https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
 </p>
 
 Transparent Conky side rails for the Hyprland desktop. The layout keeps live
