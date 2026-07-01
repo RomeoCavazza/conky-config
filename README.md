@@ -1,8 +1,8 @@
 # Conky
 
 <p align="left">
-  <img src="assets/conky.png" alt="Conky" width="26" />
-  <img src="assets/hyprland.png" alt="Hyprland" height="22" />
+  <img src="https://raw.githubusercontent.com/RomeoCavazza/assets/main/conky-config/assets/conky.webp" alt="Conky" width="26" />
+  <img src="https://raw.githubusercontent.com/RomeoCavazza/assets/main/conky-config/assets/hyprland.png" alt="Hyprland" height="22" />
   <img src="https://raw.githubusercontent.com/RomeoCavazza/nixos-config/refs/heads/main/docs/assets/logo/nvidia.svg" alt="NVIDIA" width="26" />
   <a href="https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml"><img src="https://github.com/RomeoCavazza/conky-config/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
 </p>
@@ -43,13 +43,13 @@ previous gap state when Conky exits.
 
 No window is open; the rails sit directly on the desktop.
 
-![Empty workspace](assets/empty.png)
+![Empty workspace](https://raw.githubusercontent.com/RomeoCavazza/assets/main/conky-config/assets/empty.webp)
 
 ### Active Workspace
 
 The same rails with an editor window open in the center.
 
-![Active workspace](assets/full.png)
+![Active workspace](https://raw.githubusercontent.com/RomeoCavazza/assets/main/conky-config/assets/full.webp)
 
 ## Panels
 
